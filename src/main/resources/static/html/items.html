@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="mt-2 container border border-2 p-4 rounded-5" style="max-width: 600px">
+        <div class="text-center">
+            <h2>상품 목록</h2>
+        </div>
+
+        <div class="row">
+            <div class="col d-grid col-5 mx-auto mt-4">
+                <button class="btn btn-outline-primary float-start" onclick="location.href='addForm.html'" type="button">
+                    상품 등록
+                </button>
+            </div>
+        </div> <!-- row -->
+
+        <hr class="my-4">
+
+        <div> <!-- for table start -->
+            <table class="table table-primary table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>상품명</th>
+                        <th>가격</th>
+                        <th>수량</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="item.html">1</a></td>
+                        <td><a href="item.html" class="text-decoration-none">Test Product 1</a></td>
+                        <td>10000</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td><a href="item.html">2</a></td>
+                        <td><a href="item.html" class="text-decoration-none">Test Product 2</a></td>
+                        <td>20000</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!-- for table end -->
+
+    </div> <!-- container -->
+</body>
+</html>

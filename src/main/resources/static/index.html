@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=954600bdc92b3a0cb2c920f373816fe7"></script>
+  <script>
+    var markerPosition = new kakao.maps.LatLng(37.570975, 126.992557);
+
+    var marker = new kakao.maps.Marker({
+      position: markerPosition
+    });
+
+    var options = {
+      center: new kakao.maps.LatLng(37.570975, 126.992557),
+      level: 3,
+      marker: marker
+    };
+  </script>
+</head>
+<style>
+  #map{
+    width: 300px;
+    height: 300px;
+
+    border: 2px solid rgba(255, 0, 0, 0.45);
+    float:left;
+    margin-right: 30px;
+
+    clear:both;
+  }
+</style>
+<body>
+<div id="map"></div>
+<script> //kakaomap: https://apis.map.kakao.com/web/guide/
+  var container = document.getElementById("map");
+
+  // var map = new kakao.maps.Map(container, options); 동적맵
+  var staticMap = new kakao.maps.StaticMap(container, options);
+  //marker.setMap(staticMap); 동적맵
+</script>
+
+<ul>
+  <li>상품 관리
+    <ul>
+      <li><a href="/basic/items">상품 관리 - 기본</a></li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html>
